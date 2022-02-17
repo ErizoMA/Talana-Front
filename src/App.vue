@@ -1,11 +1,15 @@
 <template>
   <Header />
-  <router-view />
+  <div class="main">
+    <Categories />
+    <router-view />
+  </div>
 </template>
 <script>
 import Header from "./components/Header.vue";
+import Categories from "./components/Categories.vue";
 export default {
-  components: { Header },
+  components: { Header, Categories },
 };
 </script>
 
@@ -23,5 +27,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
 </style>
