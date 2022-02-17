@@ -31,7 +31,7 @@ export default {
       const index = cart.findIndex(
         (product) => product.id === props.product.id
       );
-      if (index < 0) {
+      if (index < 0 && props.product.stock > 0) {
         cart.push({ ...props.product, counter: amount.value });
       } else {
         cart[index].counter += amount.value;
