@@ -12,7 +12,7 @@
             <p>Name : {{ product.name }}</p>
             <p>Code : {{ product.code }}</p>
             <p>Stock : {{ product.stock }}</p>
-            <p>Price : S/. {{ product.price }}</p>
+            <p>Price : $ {{ product.price }}</p>
           </div>
         </div>
         <div class="information__secondary">

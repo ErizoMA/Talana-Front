@@ -13,11 +13,11 @@
           <span @click="addOne(item)">+</span>
         </div>
         <div class="sub-total">
-          Sub-total: S/.{{ item.price * item.counter }}
+          Sub-total: $ {{ item.price * item.counter }}
         </div>
       </div>
     </div>
-    <h2>Sub Total = S/.{{ total }}</h2>
+    <h2>Total = $ {{ total }}</h2>
   </div>
 </template>
 

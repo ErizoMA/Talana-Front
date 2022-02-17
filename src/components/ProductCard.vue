@@ -7,10 +7,12 @@
     <div class="info">
       <div class="card__information">
         <h3 class="card__info">{{ shortName }}</h3>
-        <p class="card__info">Precio: S/.{{ product.price }}</p>
+        <p class="card__info">Precio: $ {{ product.price }}</p>
       </div>
 
-      <div class="card__action"></div>
+      <div class="card__action">
+        <CardActions :product="product" />
+      </div>
     </div>
     <ProductDetails v-if="info" :product="product" :toggle="toggleInfo" />
   </div>
@@ -19,11 +21,13 @@
 
 <script>
 import { computed, ref } from "vue";
+import CardActions from "./CardActions.vue";
+
 import ProductDetails from "./ProductDetails.vue";
 
 export default {
   props: ["product"],
-  components: { ProductDetails },
+  components: { ProductDetails, CardActions },
   setup(props) {
     const info = ref(false);
     const toggleInfo = () => {

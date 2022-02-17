@@ -1,0 +1,21 @@
+.amount {
+  display: flex;
+  gap: 2px;
+  background: black;
+  color: white;
+  padding: 5px;
+}
+.amount p {
+  background: white;
+  color: black;
+  width: 30px;
+  margin: 0 10px;
+}
+.amount span {
+  cursor: pointer;
+  width: 15px;
+}
+.card__cart {
+  cursor: pointer;
+  height: 30px;
+}
