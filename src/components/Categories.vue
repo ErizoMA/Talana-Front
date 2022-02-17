@@ -1,6 +1,6 @@
 <template>
   <div class="categories">
-    <h1 class="title">Categories</h1>
+    <h1 class="title">Categorias</h1>
     <p v-if="error">Something went wrong ...</p>
     <div v-if="!loading" id="nav">
       <div v-for="category in categories" :key="category.id">

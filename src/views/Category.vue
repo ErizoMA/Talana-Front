@@ -1,6 +1,6 @@
 <template>
   <div class="category">
-    <h1 class="category__title">Category {{ name }}</h1>
+    <h1 class="category__title">Categoria {{ name }}</h1>
     <h2>Home > Products > {{ name }}</h2>
     <p v-if="error">Something went wrong ...</p>
     <div v-if="!loading" class="products">

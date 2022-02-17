@@ -1,11 +1,14 @@
 .header {
-  width: 100%;
+  width: 100vw;
   height: 88px;
   display: flex;
+  border: 1px solid gray;
+  border-left: none;
+
 }
 .header__logo {
   min-width: 250px;
-  border: 1px solid gray;
+  border-right: 1px solid gray;
   display: grid;
   place-items: center;
 }
@@ -18,8 +21,6 @@
   align-items: center;
   justify-content: flex-end;
   gap: 50px;
-  border: 1px solid gray;
-  border-left: none;
   flex: 1;
 }
 .header__input {

@@ -9,15 +9,15 @@
         <div class="information__principal">
           <img :src="product.photo" alt="" />
           <div>
-            <p>Name : {{ product.name }}</p>
-            <p>Code : {{ product.code }}</p>
+            <p>Nombre : {{ product.name }}</p>
+            <p>Codigo : {{ product.code }}</p>
             <p>Stock : {{ product.stock }}</p>
-            <p>Price : $ {{ product.price }}</p>
+            <p>Precio : $ {{ product.price }}</p>
           </div>
         </div>
         <div class="information__secondary">
           <p>
-            Description: <span>{{ product.description }}</span>
+            Descripcion: <span>{{ product.description }}</span>
           </p>
         </div>
       </div>

@@ -1,11 +1,11 @@
 <template>
   <div class="cart" @mouseleave="closeCart">
-    <h1 class="cart__title">Shopping Resume</h1>
+    <h1 class="cart__title">Resumen de Compra</h1>
     <div v-for="item in itemsFiltered" :key="item">
       <div class="cart__item">
         <div class="details">
           <p>{{ item.name }}</p>
-          <p>Price: S/.{{ item.price }}</p>
+          <p>Precio: S/.{{ item.price }}</p>
         </div>
         <div class="card__amount">
           <span @click="subtractOne(item)">-</span>
