@@ -1,5 +1,5 @@
 <template>
-  <Cart v-if="cartDisplay" />
+  <Cart v-if="cartDisplay" @close="showCart" />
 
   <header class="header">
     <div class="header__logo">

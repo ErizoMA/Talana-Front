@@ -11,6 +11,7 @@
   height: 200px;
   width: auto;
   background: white;
+  cursor: pointer;
 }
 
 .card__img img {
