@@ -1,5 +1,5 @@
 <template>
-  <div class="cart">
+  <div class="cart" @mouseleave="closeCart">
     <h1 class="cart__title">Shopping Resume</h1>
     <div v-for="item in itemsFiltered" :key="item">
       <div class="cart__item">
@@ -26,7 +26,15 @@ import cartActions from "../composables/cartActions";
 export default {
   setup() {
     const { addOne, subtractOne, itemsFiltered, total } = cartActions();
-    return { total, addOne, subtractOne, itemsFiltered };
+    const closeCart = () => {
+      console.log("closeee");
+    };
+    return { total, addOne, subtractOne, itemsFiltered, closeCart };
+  },
+  methods: {
+    closeCart() {
+      this.$emit("close");
+    },
   },
 };
 </script>

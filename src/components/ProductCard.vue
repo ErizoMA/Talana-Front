@@ -3,6 +3,7 @@
     <div class="card__img" @click="toggleInfo">
       <img :src="product.photo" alt="card image" />
       <div v-if="product.stock > 0" class="stock">Disponible</div>
+      <div v-else class="stock">Sin Stock</div>
     </div>
     <div class="info">
       <div class="card__information">
