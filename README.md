@@ -1,7 +1,10 @@
 # talana-challenge
 
 # Preview
-<img height="400px" src="https://res.cloudinary.com/djzj5tbgw/image/upload/v1645130090/talana-mockup_qq3xct.jpg">
+## Category
+<code><img height="400px" src="https://res.cloudinary.com/djzj5tbgw/image/upload/v1645130090/talana-mockup_qq3xct.jpg"></code>
+## Product
+<code><img height="400px" src="https://res.cloudinary.com/djzj5tbgw/image/upload/v1645130573/talana-second_y2klrw.jpg"></code>
 
 ## Project setup
 ```
