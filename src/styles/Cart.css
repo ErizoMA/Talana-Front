@@ -1,0 +1,46 @@
+.cart {
+  width: 450px;
+  padding: 25px;
+  position: absolute;
+  right: 0;
+  margin-top: 88px;
+  border: solid 1px gray;
+  background: white;
+  z-index: 1000;
+}
+.cart__title {
+  margin-bottom: 20px;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  max-width: 150px;
+}
+.card__amount {
+  display: flex;
+  gap: 2px;
+  background: black;
+  color: white;
+  padding: 5px;
+}
+.card__amount p {
+  background: white;
+  color: black;
+  width: 30px;
+  margin: 0 10px;
+}
+.card__amount span {
+  cursor: pointer;
+  width: 15px;
+}
