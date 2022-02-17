@@ -1,5 +1,8 @@
 # talana-challenge
 
+# Preview
+<img height="400px" src="https://res.cloudinary.com/djzj5tbgw/image/upload/v1645130090/talana-mockup_qq3xct.jpg">
+
 ## Project setup
 ```
 npm install
