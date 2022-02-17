@@ -4,7 +4,13 @@
     <p v-if="error">Something went wrong ...</p>
     <div v-if="!loading" id="nav">
       <div v-for="category in categories" :key="category.id">
-        <p>{{ category.name }}</p>
+        <router-link
+          :to="{
+            name: 'Category',
+            params: { name: category.name },
+          }"
+          >{{ category.name }}</router-link
+        >
       </div>
     </div>
     <div v-else>Loading</div>

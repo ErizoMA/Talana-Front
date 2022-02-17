@@ -1,0 +1,23 @@
+.category {
+  flex: 1;
+  position: relative;
+}
+.category h1 {
+  margin: 20px;
+}
+.category h2 {
+  text-align: left;
+  margin: 20px;
+}
+.title {
+  margin: 15px 0;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  width: 100%;
+  row-gap: 2px;
+  column-gap: 5px;
+  padding: 10px;
+}

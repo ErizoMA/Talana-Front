@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import Category from "../views/Category.vue";
 
 const routes = [
   {
+    path: "/category/:name",
+    name: "Category",
+    component: Category,
+    props: true,
+  },
+  {
     path: "/",
-    name: "Home",
-    component: Home,
+    redirect: "/category/Alimentos",
   },
 ];
 
