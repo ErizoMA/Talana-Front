@@ -1,7 +1,7 @@
 <template>
   <div class="backdrop">
     <div v-if="product" class="product">
-      <div class="header">
+      <div class="product__header">
         <h2>Producto Agregado</h2>
         <p @click="toggle">X</p>
       </div>
